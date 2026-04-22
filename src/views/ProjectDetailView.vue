@@ -52,7 +52,8 @@ function goBack() {
             v-if="project.image"
             :src="project.image"
             :alt="project.title"
-            class="w-full h-full object-cover"
+            class="w-full h-full"
+            :class="project.imageFit === 'contain' ? 'object-contain' : 'object-cover'"
           />
           <span
             v-else

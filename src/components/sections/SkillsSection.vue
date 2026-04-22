@@ -12,7 +12,7 @@ const { el, visible } = useReveal()
     <div class="max-w-6xl mx-auto px-6">
       <SectionTitle
         title="Skills"
-        subtitle="Technologies and tools I work with regularly."
+        subtitle="Design, content, and production skills I use to build complete digital experiences."
       />
 
       <div

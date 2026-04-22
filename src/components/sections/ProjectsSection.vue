@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useReveal } from '@/composables/useReveal'
 import SectionTitle from '@/components/ui/SectionTitle.vue'
 import ProjectCard from '@/components/ui/ProjectCard.vue'
@@ -7,14 +7,12 @@ import { projects } from '@/data/projects.js'
 
 const { el, visible } = useReveal()
 
-const categories = ['All', 'Frontend', 'Backend', 'Fullstack']
+const categories = computed(() => ['All', ...new Set(projects.map((project) => project.category))])
 const activeFilter = ref('All')
 
 function filteredProjects() {
   if (activeFilter.value === 'All') return projects
-  return projects.filter(
-    (p) => p.category.toLowerCase() === activeFilter.value.toLowerCase(),
-  )
+  return projects.filter((project) => project.category.toLowerCase() === activeFilter.value.toLowerCase())
 }
 </script>
 

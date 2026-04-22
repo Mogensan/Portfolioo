@@ -57,7 +57,7 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
         aria-label="Back to top"
       >
         <img
-          src="/logo.svg"
+          src="/Anders Mogensen Logo.png"
           alt="AM"
           class="h-8 w-auto"
           @error="$event.target.style.display = 'none'"

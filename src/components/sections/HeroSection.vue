@@ -36,13 +36,13 @@ function scrollToProjects() {
 
       <!-- Title -->
       <p class="text-gold text-xl md:text-2xl font-heading font-semibold mb-6">
-        Full Stack Developer
+        Multimedia Designer
       </p>
 
       <!-- Tagline -->
       <p class="text-surface/60 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-        I build clean, performant web applications with a focus on great user experience and
-        maintainable code.
+        I design websites and digital experiences with a focus on UX, content creation, CMS,
+        branding, photo editing, and video editing.
       </p>
 
       <!-- CTAs -->
