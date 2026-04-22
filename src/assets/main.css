@@ -1,35 +1,24 @@
 @import './base.css';
-@import "tailwindcss";
+@import 'tailwindcss';
 
+/* Register design-system colours as Tailwind utilities */
+@theme {
+  --color-brand: #B3001B;
+  --color-gold: #D4AF37;
+  --color-charcoal: #1A1A1A;
+  --color-surface: #F7F7F7;
+  --color-muted: #8C8C8C;
+}
+
+/* Heading font utility for non-heading elements */
+.font-heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Full-width layout reset — portfolio takes 100% width */
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 2rem;
-  }
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin: 0;
 }
