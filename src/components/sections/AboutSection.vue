@@ -5,6 +5,7 @@ import SectionTitle from '@/components/ui/SectionTitle.vue'
 const { el, visible } = useReveal()
 const VIDEO_CV_URL = 'https://youtu.be/FUNg6yoNYzs'
 const TWITCH_URL = 'https://twitch.tv/mogensann'
+const PHOTO_URL = encodeURI('/Anders Mogense potræt.jpg')
 
 const stats = [
   { value: '2+', label: 'Years Experience' },
@@ -26,17 +27,14 @@ const stats = [
         <!-- Photo / Avatar -->
         <div class="flex justify-center lg:justify-start">
           <div
-            class="relative w-64 h-64 rounded shadow-[0_4px_12px_rgba(0,0,0,0.08)] overflow-hidden bg-charcoal flex items-center justify-center border-l-4 border-gold"
+            class="relative w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden bg-white p-2 shadow-[0_8px_24px_rgba(0,0,0,0.12)] border border-gold/25 ring-2 ring-gold/80"
           >
-            <!--
-              Replace the placeholder below with your actual photo:
-              <img src="/avatar.jpg" alt="Anders Mogensen" class="w-full h-full object-cover" />
-            -->
-            <span
-              class="text-8xl font-heading font-bold select-none"
-              style="color: rgba(212,175,55,0.3)"
-              aria-hidden="true"
-            >AM</span>
+            <img
+              :src="PHOTO_URL"
+              alt="Anders Mogensen portræt"
+              class="w-full h-full object-cover object-center rounded-xl border border-gold/70"
+              loading="lazy"
+            />
           </div>
         </div>
 
