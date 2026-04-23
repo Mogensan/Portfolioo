@@ -54,11 +54,11 @@ function scrollToProjects() {
           View My Work
         </button>
         <a
-          href="/resume.pdf"
+          href="/Anders Mogensen CV.pdf"
           download
           class="w-full sm:w-auto px-8 py-3 bg-gold text-charcoal font-semibold rounded shadow-[0_4px_12px_rgba(0,0,0,0.08)] hover:bg-[#c09b2a] transition-colors text-center"
         >
-          <!-- Place your CV at public/resume.pdf to enable this download -->
+
           Download CV
         </a>
       </div>

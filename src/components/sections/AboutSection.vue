@@ -72,7 +72,7 @@ const stats = [
 
           <div class="flex flex-wrap items-center gap-3">
             <a
-              href="/resume.pdf"
+              href="/Anders Mogensen CV.pdf"
               download
               class="inline-block px-6 py-3 bg-gold text-charcoal font-semibold rounded shadow-[0_4px_12px_rgba(0,0,0,0.08)] hover:bg-[#c09b2a] transition-colors"
             >

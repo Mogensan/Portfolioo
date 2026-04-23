@@ -59,7 +59,7 @@ export const projects = [
     shortDesc: 'A recipe website for a fictional restaurant created as part of my education.',
     description:
       'This recipe website was designed for a fictional restaurant as part of my education. I wanted the site to feel appetizing, structured, and practical, with a layout that helps users quickly find dishes while still supporting a polished restaurant brand.',
-    tech: ['Vue 3', 'Web Design', 'Content Structure'],
+    tech: ['HTML', 'CSS', 'Web Design', 'Content Structure'],
     github: 'https://github.com/Mogensan/recipe-site',
     live: 'https://mogensan.github.io/recipe-site/',
     image: '/Recipe site.png',
